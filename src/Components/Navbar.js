@@ -1,5 +1,4 @@
 import React from 'react';
-
 import OlxLogo from '../Assets/OlxLogo';
 import Search from '../Assets/Search';
 import Arrow from '../Assets/Arrow';

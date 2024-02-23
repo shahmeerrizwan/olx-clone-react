@@ -574,8 +574,9 @@ padding-bottom: 10px;
 
 }
 
-.w-100{
-  height: 100px !important;
+.w-sm{
+  height: 130px !important;
+  width: 100%;
 }
 .smimg {
   height: 75px !important;
@@ -594,6 +595,15 @@ display: block;
   width: 35% !important;
 }
 }
-
+@media (min-width: 576px){
+.card-deck {
+    width: 100% !important; 
+    margin: auto;
+  }} 
 
 /* NAVBAR END  */
+
+/* END IMAGE  */
+.endimg{
+  width: 100%;
+}
