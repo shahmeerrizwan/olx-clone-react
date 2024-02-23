@@ -14,7 +14,7 @@ max-width: 100%;
  .w-100{
   margin-top: 20px !important;
  }
-.sm{
+.smimg{
   width: 60%;
   display: block;
   margin-left: auto;
@@ -23,7 +23,8 @@ max-width: 100%;
 
 /* NAVBAR  */
 .back{
-  position: relative;
+  position: fixed;
+  z-index: 100;
     top: -7px;
     height: 155px;
     width: 100%;
@@ -229,13 +230,13 @@ cursor: pointer;
 
 /* SECOND NAV COMPLETED  */
 /* header */
+/* THIRD NAV START  */
 
 .header {
-  bottom: 7px;
-  position: relative;
   background-color: rgb(255, 255, 255);
   width: 100%;
-  z-index: 3;
+  /* z-index: 1000; */
+  margin-top: 142px;
 }
 
 .header ul {
@@ -365,12 +366,10 @@ cursor: pointer;
   .header .menu-icon {
     display: none;
   }
+  .main{
+    padding-top: 23px;
+  }
 }
-
-/* THIRD NAV START  */
-
-/* header */
-
 
 
 /* THIRD NAV COMPLETED  */
@@ -415,9 +414,12 @@ cursor: pointer;
 .w-100{
   height: 120px !important;
 }
-.sm{
+.smimg {
   height: 75px !important;
 width: 90% !important;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
  
 }
