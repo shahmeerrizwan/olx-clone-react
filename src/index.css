@@ -49,13 +49,12 @@ max-width: 100%;
 }
 .carlogo img{
   cursor: pointer;
-  /* height: 25px; */
   width: 25px;
+  
 }
 .buildinglogo img {
   cursor: pointer;
 
-  /* height: 37px; */
   width: 25px;
 }
 .buildinglogo{
@@ -327,7 +326,7 @@ cursor: pointer;
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 320px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -370,6 +369,10 @@ padding-bottom: 10px;
   }
   .main{
     padding-top: 23px;
+  }
+  .w-sm{
+
+    width: 100% !important;
   }
 }
 
@@ -540,11 +543,21 @@ padding-bottom: 10px;
 }
 
 /* FOOTER END  */
-
+@media only screen and (max-width: 619px) {
+  .carousel-item img {
+  
+    width: 100%  !important;
+    height: 160px !important;
+    
+  
+  }
+}
 @media only screen and (max-width: 900px) {
   .placeSearch,
   .productSearch,
-  .sellMenu {
+  .sellMenu,
+  .loginPage
+  {
     display: none;
   }
  .headerChildDiv{
@@ -575,8 +588,10 @@ padding-bottom: 10px;
 }
 
 .w-sm{
-  height: 130px !important;
-  width: 100%;
+
+  width: 100% !important;
+  
+
 }
 .smimg {
   height: 75px !important;
@@ -606,4 +621,31 @@ display: block;
 /* END IMAGE  */
 .endimg{
   width: 100%;
+}
+
+/* CARD  */
+
+
+#main-slider-container{
+  margin: auto !important;
+ 
+}
+.cars , .bikes{
+  font-size: 35px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-family: serif ;
+  font-weight: 550;
+  letter-spacing: 2px;
+  color: #2E2E2E;
+}
+.slider-card-description{
+  white-space: nowrap; 
+  width: 200px; 
+  opacity: 1 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.slider-card-title{
+  font-size: 18px;
 }

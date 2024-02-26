@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactCardSlider from 'react-card-slider-component';
 
-const SliderComponent = () => {
+const HomeCard1 = () => {
     const handleClick = (url) => {
         window.open(url, '_blank'); // Open the URL in a new tab
     };
 
-    const slides = [
+    const slides1 = [
         {
             image: "https://images.olx.com.pk/thumbnails/435883108-800x600.webp",
             title: "Rs 10,500,000",
@@ -29,7 +29,7 @@ const SliderComponent = () => {
             image: "https://images.olx.com.pk/thumbnails/435843423-800x600.webp",
             title: "Rs 9,631,000",
             description: "Toyota corolla cross hybrid",
-            clickEvent: () => handleClick("https://example.com/page3")
+            clickEvent: () => handleClick("https://www.olx.com.pk/item/mercedes-c250-avantgarde-cgi-turbo-iid-1083044763")
         },
         {
             image: "https://images.olx.com.pk/thumbnails/435806482-800x600.webp",
@@ -49,9 +49,9 @@ const SliderComponent = () => {
     return (
         <div>
             <h1 className='cars'> Cars For Sell </h1>
-            <ReactCardSlider slides={slides} />
+            <ReactCardSlider slides={slides1} />
         </div>
     );
 };
 
-export default SliderComponent;
+export default HomeCard1;

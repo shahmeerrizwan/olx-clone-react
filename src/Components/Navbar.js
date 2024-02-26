@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import OlxLogo from '../Assets/OlxLogo';
 import Search from '../Assets/Search';
 import Arrow from '../Assets/Arrow';
@@ -8,6 +8,11 @@ import { Link } from 'react-router-dom';
 
 
 export default function Navbar() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleMenuItemClick = () => {
+        setMenuOpen(false); // Close the hamburger menu
+    };
     return (
         <>
             <div className='back'>
@@ -63,10 +68,7 @@ export default function Navbar() {
                                 <span> ENGLISH </span>
                                 <Arrow />
                             </div>
-                            <div className="loginPage">
-                                <span className='sm'>Login</span>
 
-                            </div>
 
                             <div className="sellMenu">
                                 <SellButton />
@@ -82,14 +84,14 @@ export default function Navbar() {
 
 
             <header className="header">
-                <input className="menu-btn" type="checkbox" id="menu-btn" />
+                <input className="menu-btn" type="checkbox" id="menu-btn" checked={menuOpen} onChange={() => setMenuOpen(!menuOpen)} />
                 <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
                 <ul className="menu">
-                    <li><Link to="/"> Home </Link></li>
-                    <li><Link to="/products"> Products </Link></li>
-                    <li><Link to="/delivery"> Delivery </Link></li>
-                    <li><Link to="/contact"> Contact </Link></li>
-                    <li><Link to="/reviews"> Reviews</Link></li>
+                    <li><Link to="/" onClick={handleMenuItemClick}> Home </Link></li>
+                    <li><Link to="/products" onClick={handleMenuItemClick}> Products </Link></li>
+                    <li><Link to="/delivery" onClick={handleMenuItemClick}> Delivery </Link></li>
+                    <li><Link to="/contact" onClick={handleMenuItemClick}> Contact </Link></li>
+                    <li><Link to="/reviews" onClick={handleMenuItemClick}> Reviews</Link></li>
 
                 </ul>
             </header>
