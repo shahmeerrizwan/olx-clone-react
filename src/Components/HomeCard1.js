@@ -1,57 +1,135 @@
-import React from 'react';
-import ReactCardSlider from 'react-card-slider-component';
+import React, { useEffect, useRef, useState } from 'react';
 
-const HomeCard1 = () => {
-    const handleClick = (url) => {
-        window.open(url, '_blank'); // Open the URL in a new tab
+function ScrollableCards() {
+    const scrollImagesRef = useRef(null);
+    const [scrollLength, setScrollLength] = useState(0);
+    const leftButtonRef = useRef(null);
+    const rightButtonRef = useRef(null);
+
+    useEffect(() => {
+        const scrollImages = scrollImagesRef.current;
+        const updateScrollLength = () => {
+            if (scrollImages) {
+                setScrollLength(scrollImages.scrollWidth - scrollImages.clientWidth);
+            }
+        };
+        updateScrollLength();
+        window.addEventListener('resize', updateScrollLength);
+        return () => {
+            window.removeEventListener('resize', updateScrollLength);
+        };
+    }, []);
+
+    useEffect(() => {
+        const scrollImages = scrollImagesRef.current;
+        const leftButton = leftButtonRef.current;
+        const rightButton = rightButtonRef.current;
+
+        const checkScroll = () => {
+            if (scrollImages) {
+                const currentScroll = scrollImages.scrollLeft;
+                if (currentScroll === 0) {
+                    leftButton.setAttribute("disabled", "true");
+                    rightButton.removeAttribute("disabled");
+                } else if (currentScroll === scrollLength) {
+                    rightButton.setAttribute("disabled", "true");
+                    leftButton.removeAttribute("disabled");
+                } else {
+                    leftButton.removeAttribute("disabled");
+                    rightButton.removeAttribute("disabled");
+                }
+            }
+        };
+
+        if (scrollImages) {
+            scrollImages.addEventListener('scroll', checkScroll);
+            return () => {
+                scrollImages.removeEventListener('scroll', checkScroll);
+            };
+        }
+    }, [scrollLength]);
+
+    const leftScroll = () => {
+        if (scrollImagesRef.current) {
+            scrollImagesRef.current.scrollBy({
+                left: -200,
+                behavior: 'smooth'
+            });
+        }
     };
 
-    const slides1 = [
-        {
-            image: "https://images.olx.com.pk/thumbnails/435883108-800x600.webp",
-            title: "Rs 10,500,000",
-            description: "Toyota Hilux Revo Dual AC",
-            clickEvent: () => handleClick("https://www.olx.com.pk/item/toyota-hilux-revo-dual-ac-iid-1084390854") // Assign a function to the clickEvent property
-        },
-        {
-            image: "https://images.olx.com.pk/thumbnails/433867303-800x600.webp",
-            title: "Rs 9,850,000",
-            description: "Toyota Revo 2018 Better than Vezel Prado",
-            clickEvent: () => handleClick("https://www.olx.com.pk/item/toyota-revo-2018-better-than-vezel-prado-iid-1084055452")
-        },
-        {
-            image: "https://images.olx.com.pk/thumbnails/435871237-800x600.webp",
-            title: "Rs 11,050,000",
-            description: "2021 revo new tv 03123597704 num hai",
-            clickEvent: () => handleClick("https://www.olx.com.pk/item/2021-revi-new-tv-iid-1084388778")
-        },
-        {
-            image: "https://images.olx.com.pk/thumbnails/435843423-800x600.webp",
-            title: "Rs 9,631,000",
-            description: "Toyota corolla cross hybrid",
-            clickEvent: () => handleClick("https://www.olx.com.pk/item/mercedes-c250-avantgarde-cgi-turbo-iid-1083044763")
-        },
-        {
-            image: "https://images.olx.com.pk/thumbnails/435806482-800x600.webp",
-            title: "Rs 3,050,000",
-            description: "Mercedes C180 Sunroof elegance model 1.8L supercharged",
-            clickEvent: () => handleClick("https://www.olx.com.pk/item/mercedes-c180-sunroof-elegance-model-iid-1084378273")
-        },
-        {
-            image: "https://images.olx.com.pk/thumbnails/427659471-800x600.webp",
-            title: "Rs 5,650,000",
-            description: "2Mercedes C250 Avantgarde cgi turbo",
-            clickEvent: () => handleClick("https://www.olx.com.pk/item/mercedes-c250-avantgarde-cgi-turbo-iid-1083044763")
-        },
-        // Add more slides with their respective clickEvent functions
-    ];
+    const rightScroll = () => {
+        if (scrollImagesRef.current) {
+            scrollImagesRef.current.scrollBy({
+                left: 200,
+                behavior: 'smooth'
+            });
+        }
+    };
 
     return (
-        <div>
-            <h1 className='cars'> Cars For Sell </h1>
-            <ReactCardSlider slides={slides1} />
+        <div className="cover">
+            <button ref={leftButtonRef} className="left" onClick={leftScroll}>
+                <i className="fas fa-angle-double-left"></i>
+            </button>
+            <div ref={scrollImagesRef} className="scroll-images">
+                <div className="child">
+                    <a href="https://classroom.google.com/c/NTkxMDY3Mjc5MDg4?pli=1" target='blank'><img src="https://images.olx.com.pk/thumbnails/435883108-800x600.webp" alt="Card 1" />
+
+                        <h4 className=''>RS : 300000</h4>
+                        <p>ajshxsjhdwg sgid sgiuwd ygs</p></a>
+                </div>
+                <div className="child">
+                    <img src="https://images.olx.com.pk/thumbnails/435883108-800x600.webp" alt="Card 2" />
+                    <h4>Card 2</h4>
+                </div>
+                <div className="child">
+                    <img src="https://images.olx.com.pk/thumbnails/435883108-800x600.webp" alt="Card 1" />
+                    <h4>Card 1</h4>
+                </div>
+                <div className="child">
+                    <img src="https://images.olx.com.pk/thumbnails/435883108-800x600.webp" alt="Card 2" />
+                    <h4>Card 2</h4>
+                </div>
+                <div className="child">
+                    <img src="https://images.olx.com.pk/thumbnails/435883108-800x600.webp" alt="Card 1" />
+                    <h4>Card 1</h4>
+                </div>
+                <div className="child">
+                    <img src="https://images.olx.com.pk/thumbnails/435883108-800x600.webp" alt="Card 2" />
+                    <h4>Card 2</h4>
+                </div>
+                <div className="child">
+                    <img src="https://images.olx.com.pk/thumbnails/435883108-800x600.webp" alt="Card 1" />
+                    <h4>Card 1</h4>
+                </div>
+                <div className="child">
+                    <img src="https://images.olx.com.pk/thumbnails/435883108-800x600.webp" alt="Card 2" />
+                    <h4>Card 2</h4>
+                </div>
+                <div className="child">
+                    <img src="https://images.olx.com.pk/thumbnails/435883108-800x600.webp" alt="Card 1" />
+                    <h4>Card 1</h4>
+                </div>
+                <div className="child">
+                    <img src="https://images.olx.com.pk/thumbnails/435883108-800x600.webp" alt="Card 2" />
+                    <h4>Card 2</h4>
+                </div>
+                <div className="child">
+                    <img src="https://images.olx.com.pk/thumbnails/435883108-800x600.webp" alt="Card 1" />
+                    <h4>Card 1</h4>
+                </div>
+                <div className="child">
+                    <img src="https://images.olx.com.pk/thumbnails/435883108-800x600.webp" alt="Card 2" />
+                    <h4>Card 2</h4>
+                </div>
+
+            </div>
+            <button ref={rightButtonRef} className="right" onClick={rightScroll}>
+                <i className="fas fa-angle-double-right"></i>
+            </button>
         </div>
     );
-};
+}
 
-export default HomeCard1;
+export default ScrollableCards;

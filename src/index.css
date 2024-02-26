@@ -649,3 +649,148 @@ display: block;
 .slider-card-title{
   font-size: 18px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cover {
+  position: relative;
+  padding: 0px 30px;
+  margin-top: 100px;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.child p {
+  white-space: nowrap; 
+  width: 200px; 
+  opacity: 1 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+}
+.child h4{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.child a {
+  text-decoration: none;
+  color: black;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-images {
+  position: relative;
+  width: 90%;
+  padding: 40px 0px;
+  height: auto;
+  display: flex;
+  margin: auto;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.child {
+  min-width: 320px;
+  height: 310px;
+  margin: 1px 10px;
+  border: 1px solid #f1f1f1;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 12%);
+  cursor: pointer;
+
+}
+
+.child img, .child > img{
+
+  width: 100%;
+  
+
+ overflow: hidden;
+}
+
+.scroll-images::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #aaa;
+}
+
+.scroll-images::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+.fas {
+  font-size: 45px !important;
+  background: whitesmoke !important ;
+ margin: 10px;
+  font-weight: 900 !important;
+  color:#002f34 !important;
+  border-radius: 3px;
+}
