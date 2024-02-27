@@ -42,7 +42,7 @@ export default function Navbar() {
                             </div>
                             <div className="placeSearch">
                                 <Search />
-                                <input type="text" id="browser" name="browser" placeholder='Pakistan' autoComplete="off" list="browsers" />
+                                <input type="text" id="browser" name="browser" className='ali' placeholder='Pakistan' autoComplete="off" list="browsers" />
                                 <datalist id="browsers">
                                     <option value="Karachi" />
                                     <option value="Lahore" />

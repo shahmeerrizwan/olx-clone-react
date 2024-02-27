@@ -257,12 +257,29 @@ cursor: pointer;
   color: #104f56;
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: #ffffff;
-  color: #053c08;
+
+
+.menu li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  transition: width 0.5s, background-color 0.3s; /* Transition effect */
 }
 
+.menu li:hover::after {
+  width: 100%;
+  background-color: red; /* Change to red on hover */
+}
+.menu li {
+  display: inline;
+  margin-right: 20px;
+  position: relative;
+}
 .header .logo {
   display: block;
   float: left;
@@ -913,4 +930,170 @@ button {
 
 .banner {
   max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.category{
+  color: black !important;
+}
+#light .category{
+  color: black !important ;
+}
+#light .footer-section {
+  background-color: rgb(255, 255, 255) !important ;
+  color: rgb(0, 0, 0)  !important;
+}
+#light{
+  transition: 0.5s;
+
+  background-color: #ffffff !important;
+}
+#light .fa-phone,.fa-map-marker-alt{
+  background-color: rgb(255, 255, 255) !important ;
+  color: rgb(255, 255, 255) !important;
+}
+#light .cta-text h4{
+  color: rgb(0, 0, 0) !important ;
+}
+#light .cta-text span{
+  color: rgb(0, 0, 0) !important ;
+
+}
+#light .footer-widget-heading h3{
+  color: rgb(0, 0, 0) !important ;
+  }
+#light .footer-text p {
+  color: rgb(0, 0, 0) !important ;
+}
+#light .footer-social-icon span{
+  color: rgb(0, 0, 0) !important ;
+}
+#light .bikes,.cars,.category{
+  color: rgb(0, 0, 0) !important;
+}
+#light .child h6:hover{
+  color: #0056b3 !important ;
+}
+#light .child p{
+  color: rgb(0, 0, 0) !important ;
+}
+#light .child h4{
+  color: rgb(0, 0, 0) !important ;
+}
+#light .child h5{
+  color: rgb(0, 0, 0) !important ;
+}
+#light .child h6{
+  color: rgb(0, 0, 0) !important ;
+}
+
+#light .menu{
+  background-color: whitesmoke !important;
+}
+
+
+
+
+
+#dark{
+  transition: 0.7s;
+
+
+background-color: black !important ;
+}
+#dark .footer-section {
+  background-color: black !important ;
+  color: white  !important;
+}
+#dark .fa-phone , .fa-map-marker-alt{
+  background-color: rgb(0, 0, 0) !important ;
+  color: red !important;
+}
+#dark .cta-text h4{
+  color: white !important ;
+}
+#dark .cta-text span{
+  color: white !important ;
+
+}
+#dark .footer-widget-heading h3{
+color: white !important ;
+}
+#dark .footer-text p {
+  color: white !important ;
+}
+#dark .footer-social-icon span{
+  color: white !important ;
+}
+#dark .bikes, .cars, .category{
+  color: white !important;
+}
+#dark .child h6 :hover{
+  color: #0056b3 !important ;
+}
+#dark .child p ,h4,h5,h6{
+  color: white !important ;
+}
+#dark .back{
+  color: white !important;
+  background-color: black !important;
+}
+#dark .headerParentDiv{
+  color: white !important;
+  background-color: black !important;
+}
+#dark .menu{
+  color: white !important;
+  background-color: black !important;
+}
+#dark .menu li a{
+  color: white !important;
+}
+#dark .buildinglogo  img{
+  background-color: white;
+}
+#dark .carlogo  img{
+  background-color: white;
+}
+#dark .rui-77aaa{
+  color: white !important;
+  background-color: red !important;
+}
+#dark .menu li a :hover{
+  background-color: #000000 !important;
+}
+#dark .productSearch .input input {
+ box-shadow: 5px 0px 10px rgb(255, 255, 255) !important;
+ padding: 10px !important;
+}
+#dark .placeSearch {
+ box-shadow: 2px 0px 10px rgb(255, 255, 255) ;
+
+}
+#dark .subscribe-form input{
+  background-color: white !important;
+
 }

@@ -7,28 +7,62 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+import { createContext } from 'react';
+import { useState } from 'react';
+
+
+
+export const ThemeContext = createContext("null");
 
 function App() {
+
+
+  const [text, setText] = useState("Enable Dark Mode");
+
+  function updateText() {
+    setText((curr) => (curr === "Enable Light Mode" ? "Enable Dark Mode" : "Enable Light Mode"));
+  }
+
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+
+  }
+
+
+
+  const twoFunc = () => {
+    toggleTheme()
+    updateText()
+  }
+
+
   return (
-    <div >
+    <div id={theme}  >
+      <ThemeContext.Provider value={{ theme, setTheme }}>
 
-      <BrowserRouter>
-        <Navbar />
+        <BrowserRouter>
+          <Navbar />
+          <div className="form-check form-switch">
+            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={twoFunc} />
+            <p className='white' onClick={updateText}>{text}</p>
+          </div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Product />} />
+            <Route path="/delivery" element={<Delivery />} />
+            <Route path="/reviews" element={<Reviews />} />
+            <Route path="/contact" element={<Contact />} />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Product />} />
-          <Route path="/delivery" element={<Delivery />} />
-          <Route path="/reviews" element={<Reviews />} />
-          <Route path="/contact" element={<Contact />} />
-
-        </Routes>
-        <br />
+          </Routes>
+          <br />
 
 
 
-        <Footer />
-      </BrowserRouter>
+          <Footer />
+        </BrowserRouter>
+      </ThemeContext.Provider>
     </div>
   );
 }
