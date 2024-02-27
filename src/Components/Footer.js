@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="container">
                     <div className="footer-cta pt-5 pb-5">
                         <div className="row">
-                            <div className="col-xl-4 col-md-4 mb-30">
+                            <div className="col-xl-4 col-md-4 mb-30 secondlast">
                                 <div className="single-cta">
                                     <i className="fas fa-map-marker-alt"></i>
                                     <div className="cta-text">
@@ -17,7 +17,7 @@ export default function Footer() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-4 col-md-4 mb-30">
+                            <div className="col-xl-4 col-md-4 mb-30 last">
                                 <div className="single-cta">
                                     <i className="fas fa-phone"></i>
                                     <div className="cta-text">
@@ -29,7 +29,7 @@ export default function Footer() {
                             <div className="col-xl-4 col-md-4 mb-30 end">
                                 <div className="single-cta">
                                     <i className="far fa-envelope-open"></i>
-                                    <div className="cta-text">
+                                    <div className="cta-text texting">
                                         <h4>Mail us</h4>
                                         <span>Shahmeerrizwan921@gmail.com</span>
                                     </div>
