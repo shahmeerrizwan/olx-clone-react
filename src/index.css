@@ -235,7 +235,6 @@ cursor: pointer;
 .header {
   background-color: rgb(255, 255, 255);
   width: 100%;
-  /* z-index: 1000; */
   margin-top: 142px;
 }
 
@@ -347,7 +346,6 @@ cursor: pointer;
   top: 0;
 }
 
-/* 48em = 768px */
 
 @media (min-width: 900px) {
   .header li {
@@ -559,13 +557,7 @@ padding-bottom: 10px;
   .end {
     margin-left: 1px !important;
   }
-  /* .last{
-    margin-left: -39px;
-  }
-  .secondlast{
-    margin-left: -38px;
-    margin-bottom: 10px;
-  } */
+  
 }
 
 @media only screen and (max-width: 580px) {
@@ -582,6 +574,12 @@ padding-bottom: 10px;
   }
   .container, .container-lg, .container-md, .container-sm {
     max-width: 960px;
+}
+.fas{
+  font-size: 30px !important;
+}
+.bikes , .cars{
+  font-size: 22px !important;
 }
 }
 @media only screen and (max-width: 900px) {
@@ -618,13 +616,9 @@ padding-bottom: 10px;
   display: none !important;
 
 }
-
 .w-sm{
-
-  width: 100% !important;
-  
-
-}
+width: 100% !important;
+  }
 .smimg {
   height: 75px !important;
 width: 90% !important;
@@ -683,7 +677,6 @@ display: block;
 }
 .cars , .bikes{
   font-size: 40px;
-  /* margin-bottom: 20px; */
   margin-left: 20px;
   font-family: serif ;
   font-weight: 600;
@@ -700,66 +693,16 @@ display: block;
 .slider-card-title{
   font-size: 18px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .single-cta i {
   color: #ff5e14;
   font-size: 20px !important;
   float: left;
   margin-top: 8px;
 }
-
-
-
-
 .cover {
   position: relative;
   padding: 0px 30px;
 }
-
 .left {
   position: absolute;
   left: 0;
@@ -851,10 +794,123 @@ button {
   font-size: 25px;
 }
 .fas {
-  font-size: 45px !important;
+  font-size: 45px ;
   background: whitesmoke !important ;
- /* margin-left: 60px; */
   font-weight: 900 !important;
   color:#002f34 !important;
   border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DELIVERY PAGE  */
+
+.delivery-container {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-submit {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .delivery-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+.delivery-container {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.delivery-container h2 {
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.form-label {
+  color: #555;
+}
+
+.form-control {
+  border-radius: 20px;
+}
+
+.btn-submit {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+  .delivery-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+/* DELIVERY PAGE END  */
+
+
+/* REVIEW PAGS  */
+
+.banner {
+  max-width: 100%;
 }
