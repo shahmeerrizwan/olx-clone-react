@@ -643,6 +643,7 @@ display: block;
 }
 }
 @media (max-width: 992px){
+  
   .texting{
     padding-left: 35px;
     margin-top: -30px !important;
@@ -681,11 +682,11 @@ display: block;
  
 }
 .cars , .bikes{
-  font-size: 35px;
-  margin-bottom: 20px;
+  font-size: 40px;
+  /* margin-bottom: 20px; */
   margin-left: 20px;
   font-family: serif ;
-  font-weight: 550;
+  font-weight: 600;
   letter-spacing: 2px;
   color: #2E2E2E;
 }
@@ -757,7 +758,6 @@ display: block;
 .cover {
   position: relative;
   padding: 0px 30px;
-  margin-top: 100px;
 }
 
 .left {
@@ -803,23 +803,34 @@ display: block;
 }
 
 .child {
-  min-width: 320px;
-  height: 310px;
-  margin: 1px 10px;
-  border: 1px solid #f1f1f1;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 12%);
-  cursor: pointer;
+  min-width: 236px;
+    height: 350px;
+    margin: 1px 10px;
+    border: 1px solid #f1f1f1;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 12%);
+    cursor: pointer;
 
 }
-
+.child h5{
+  font-size: 15px;
+  margin-left: 10px;
+}
+.child h6{
+  font-size: 12px;
+  margin-left: 10px;
+}
+.child h6:hover{
+  color:#00A0C6;
+  font-weight: 500;
+}
 .child img, .child > img{
 
   width: 100%;
-  
-
- overflow: hidden;
+    overflow: hidden;
+    max-height: 170px;
+    object-fit: fill;
 }
 
 .scroll-images::-webkit-scrollbar {
