@@ -19,7 +19,6 @@ export default function Navbar() {
                 <div className='main'>
                     <div className='olxlogo'>
                         <img src="https://1000logos.net/wp-content/uploads/2023/01/OLX-logo.png" alt="" />
-
                     </div>
                     <div className='carlogo'>
                         <img src="https://static.vecteezy.com/system/resources/previews/001/193/785/non_2x/car-png.png" alt="" />
@@ -28,12 +27,8 @@ export default function Navbar() {
                     <div className='buildinglogo'>
                         <img src="https://freepngimg.com/save/148529-building-vector-png-download-free/512x512" alt="" />
                         <span>PROPERTY</span>
-
                     </div>
                 </div>
-
-
-
                 <div className='up'>
                     <div className='headerParentDiv'>
                         <div className="headerChildDiv">
@@ -81,8 +76,6 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-
-
             <header className="header">
                 <input className="menu-btn" type="checkbox" id="menu-btn" checked={menuOpen} onChange={() => setMenuOpen(!menuOpen)} />
                 <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
@@ -92,7 +85,6 @@ export default function Navbar() {
                     <li><Link to="/delivery" onClick={handleMenuItemClick}> Delivery </Link></li>
                     <li><Link to="/contact" onClick={handleMenuItemClick}> Contact </Link></li>
                     <li><Link to="/reviews" onClick={handleMenuItemClick}> Reviews</Link></li>
-
                 </ul>
             </header>
 

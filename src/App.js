@@ -41,11 +41,10 @@ function App() {
   return (
     <div id={theme}  >
       <ThemeContext.Provider value={{ theme, setTheme }}>
-
         <BrowserRouter>
           <Navbar />
           <div className="form-check form-switch">
-            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={twoFunc} />
+            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault " onClick={twoFunc} />
             <p className='white' onClick={updateText}>{text}</p>
           </div>
           <Routes>
@@ -54,12 +53,8 @@ function App() {
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/contact" element={<Contact />} />
-
           </Routes>
           <br />
-
-
-
           <Footer />
         </BrowserRouter>
       </ThemeContext.Provider>

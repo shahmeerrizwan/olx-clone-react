@@ -27,13 +27,10 @@ export default function Add() {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-
             <br />
-
             <div>
                 <img src="https://images.olx.com.pk/thumbnails/434332564-800x600.webp" className="smimg" alt="..." />
             </div>
-
         </div >
     )
 }

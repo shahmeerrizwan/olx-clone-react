@@ -71,26 +71,19 @@ function ScrollableCards() {
     return (
         <>
             <div className="cover">
-                <h1 className='cars'>CARS</h1>
+                <h1 className='bikes'>MORE CARS</h1>
 
                 <button ref={leftButtonRef} className="left" onClick={leftScroll}>
                     <i className="fas fa-angle-double-left"></i>
                 </button>
                 <div ref={scrollImagesRef} className="scroll-images">
-                    <div className="child">
-                        <a href="https://www.olx.com.pk/item/toyota-hilux-revo-dual-ac-iid-1084390854" target='blank'><img src="https://images.olx.com.pk/thumbnails/435883108-800x600.webp" alt="Card 1" />
 
-                            <h4 className=''>Rs 10,500,000</h4>
-                            <p>Toyota Hilux Revo Dual AC</p>
-                            <h5>Last Updated 5 Min Ago</h5>
-                            <h6>Clicked For More Update</h6></a>
-                    </div>
                     <div className="child">
-                        <a href="https://www.olx.com.pk/item/mercedes-c250-avantgarde-cgi-turbo-iid-1083044763" target='blank'><img src="https://images.olx.com.pk/thumbnails/427659471-800x600.webp" alt="Card 1" />
+                        <a href="https://www.olx.com.pk/item/toyota-yaris-ativ-cvt-13l-iid-1084478767" target='blank'><img src="https://images.olx.com.pk/thumbnails/436397152-800x600.webp" alt="Card 1" />
 
-                            <h4 className=''>Rs 5,650,000</h4>
-                            <p>2Mercedes C250 Avantgarde cgi turbo</p>
-                            <h5>Last Updated 10 Min Ago</h5>
+                            <h4 className=''>Rs 4,450,000</h4>
+                            <p>TOYOTA YARIS ATIV CVT 1.3L</p>
+                            <h5>Last Updated 2 Min Ago</h5>
                             <h6>Clicked For More Update</h6></a>
                     </div>
                     <div className="child">
@@ -99,42 +92,6 @@ function ScrollableCards() {
                             <h4 className=''>Rs 9,850,000</h4>
                             <p>Toyota Revo 2018 Better than Vezel Prado</p>
                             <h5>Last Updated 40 Min Ago</h5>
-                            <h6>Clicked For More Update</h6></a>
-                    </div>
-                    <div className="child">
-                        <a href="https://images.olx.com.pk/thumbnails/435843423-800x600.webp" target='blank'><img src="https://images.olx.com.pk/thumbnails/435843423-800x600.webp" alt="Card 1" />
-
-                            <h4 className=''>Rs 9,631,000</h4>
-                            <p>Toyota corolla cross hybrid</p>
-                            <h5>Last Updated 32 Min Ago</h5>
-                            <h6>Clicked For More Update</h6></a>
-                    </div>
-                    <div className="child">
-                        <a href="https://www.olx.com.pk/item/2021-revi-new-tv-iid-1084388778" target='blank'><img src="https://images.olx.com.pk/thumbnails/435871237-800x600.webp" alt="Card 1" />
-
-                            <h4 className=''>Rs 11,050,000</h4>
-                            <p>2021 revo new tv 03123597704 num hai</p>
-
-                            <h5>Last Updated 26 Min Ago</h5>
-                            <h6>Clicked For More Update</h6>
-                        </a>
-
-                    </div>
-
-                    <div className="child">
-                        <a href="https://www.olx.com.pk/item/mercedes-c180-sunroof-elegance-model-iid-1084378273" target='blank'><img src="https://images.olx.com.pk/thumbnails/435806482-800x600.webp" alt="Card 1" />
-
-                            <h4 className=''>Rs 3,050,000</h4>
-                            <p>Mercedes C180 Sunroof elegance model 1.8L supercharged</p>
-                            <h5>Last Updated 20 Min Ago</h5>
-                            <h6>Clicked For More Update</h6></a>
-                    </div>
-                    <div className="child">
-                        <a href="https://www.olx.com.pk/item/toyota-yaris-ativ-cvt-13l-iid-1084478767" target='blank'><img src="https://images.olx.com.pk/thumbnails/436397152-800x600.webp" alt="Card 1" />
-
-                            <h4 className=''>Rs 4,450,000</h4>
-                            <p>TOYOTA YARIS ATIV CVT 1.3L</p>
-                            <h5>Last Updated 2 Min Ago</h5>
                             <h6>Clicked For More Update</h6></a>
                     </div>
                     <div className="child">
@@ -153,6 +110,7 @@ function ScrollableCards() {
                             <h5>Last Updated 80 Min Ago</h5>
                             <h6>Clicked For More Update</h6></a>
                     </div>
+
                     <div className="child">
                         <a href="https://www.olx.com.pk/item/mazda-rx8-iid-1084397239" target='blank'><img src="https://images.olx.com.pk/thumbnails/435992366-800x600.webp" alt="Card 1" />
 
@@ -166,6 +124,49 @@ function ScrollableCards() {
                                 buy and enjoy the ride</p>
                             <h5>Last Updated 50 Min Ago</h5>
                             <h6>Clicked For More Update</h6></a>
+                    </div>
+                    <div className="child">
+                        <a href="https://www.olx.com.pk/item/mercedes-c250-avantgarde-cgi-turbo-iid-1083044763" target='blank'><img src="https://images.olx.com.pk/thumbnails/427659471-800x600.webp" alt="Card 1" />
+
+                            <h4 className=''>Rs 5,650,000</h4>
+                            <p>2Mercedes C250 Avantgarde cgi turbo</p>
+                            <h5>Last Updated 10 Min Ago</h5>
+                            <h6>Clicked For More Update</h6></a>
+                    </div>
+                    <div className="child">
+                        <a href="https://images.olx.com.pk/thumbnails/435843423-800x600.webp" target='blank'><img src="https://images.olx.com.pk/thumbnails/435843423-800x600.webp" alt="Card 1" />
+
+                            <h4 className=''>Rs 9,631,000</h4>
+                            <p>Toyota corolla cross hybrid</p>
+                            <h5>Last Updated 32 Min Ago</h5>
+                            <h6>Clicked For More Update</h6></a>
+                    </div>
+                    <div className="child">
+                        <a href="https://www.olx.com.pk/item/toyota-hilux-revo-dual-ac-iid-1084390854" target='blank'><img src="https://images.olx.com.pk/thumbnails/435883108-800x600.webp" alt="Card 1" />
+
+                            <h4 className=''>Rs 10,500,000</h4>
+                            <p>Toyota Hilux Revo Dual AC</p>
+                            <h5>Last Updated 5 Min Ago</h5>
+                            <h6>Clicked For More Update</h6></a>
+                    </div>
+                    <div className="child">
+                        <a href="https://www.olx.com.pk/item/mercedes-c180-sunroof-elegance-model-iid-1084378273" target='blank'><img src="https://images.olx.com.pk/thumbnails/435806482-800x600.webp" alt="Card 1" />
+
+                            <h4 className=''>Rs 3,050,000</h4>
+                            <p>Mercedes C180 Sunroof elegance model 1.8L supercharged</p>
+                            <h5>Last Updated 20 Min Ago</h5>
+                            <h6>Clicked For More Update</h6></a>
+                    </div>
+                    <div className="child">
+                        <a href="https://www.olx.com.pk/item/2021-revi-new-tv-iid-1084388778" target='blank'><img src="https://images.olx.com.pk/thumbnails/435871237-800x600.webp" alt="Card 1" />
+
+                            <h4 className=''>Rs 11,050,000</h4>
+                            <p>2021 revo new tv 03123597704 num hai</p>
+
+                            <h5>Last Updated 26 Min Ago</h5>
+                            <h6>Clicked For More Update</h6>
+                        </a>
+
                     </div>
                 </div>
                 <button ref={rightButtonRef} className="right" onClick={rightScroll}>

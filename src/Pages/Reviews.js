@@ -33,7 +33,6 @@ const Reviews = () => {
                                                 </div>
                                                 <span className="rating-value">23</span>
                                             </div>
-                                            {/* More single-progress-bar items */}
                                         </div>
                                     </div>
                                 </div>

@@ -5,7 +5,6 @@ export default function Category() {
         <div>
             <br />
             <br />
-
             <h1 className='category' style={{ textAlign: 'center', fontFamily: "serif", fontWeight: "bolder", display: "flex", justifyContent: "center" }} >ALL CATEGORIES </h1>
             <br />
             <br />

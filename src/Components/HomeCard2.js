@@ -137,7 +137,6 @@ function ScrollableCards() {
                         <h5>Last Updated 30 Min Ago</h5>
                         <h6>Clicked For More Update</h6>
                     </a>
-
                 </div>
                 <div className="child">
                     <a href="https://www.olx.com.pk/item/3-marla-house-in-central-marghzar-officers-colony-for-sale-iid-1084355428" target='blank'><img src="https://images.olx.com.pk/thumbnails/435668813-800x600.webp" alt="Card 1" />
