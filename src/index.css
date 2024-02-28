@@ -964,7 +964,9 @@ margin-top: 10px ;}
 #light .white{
   color: #000000 !important ;
 }
-
+#light .card-bodyy p{
+  color: rgb(0, 0, 0) !important;
+}
 /* DARK THEME  */
 
 #dark{
@@ -1089,7 +1091,10 @@ color: white !important ;
   background-color: rgb(28, 28, 28) !important;
   color: white !important;
 }
-#dark .card-bodyy h4,p{
+#dark .card-bodyy h4{
+  color: white !important;
+}
+#dark .card-bodyy p{
   color: white !important;
 }
 #dark .loveu:hover{
