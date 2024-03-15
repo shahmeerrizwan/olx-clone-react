@@ -130,7 +130,7 @@ function ScrollableCards() {
                         <h6>Clicked For More Update</h6></a>
                 </div>
                 <div className="child">
-                    <a href="https://www.olx.com.pk/item/iphone-x-non-pta-64-gb-face-id-ok-haiexchange-possible-iphone-7plus-se-iid-1084448729" target='blank'><img src="https://images.olx.com.pk/thumbnails/436220369-800x600.webp" alt="Card 1" />
+                    <a href="https://www.olx.com.pk/item/iphone-x-non-pta-64-gb-face-id-ok-haiexchange-possible-iphone-7plus-se-iid-1084448729" target='blank'><img src="https://images.olx.com.pk/thumbnails/428500038-800x600.webp" alt="Card 1" />
 
                         <h4 className=''>Rs 39,000</h4>
                         <p>iphone x non pta 64 gb face id ok haiexchange possible iphone 7plus se</p>
