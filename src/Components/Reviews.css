@@ -3,10 +3,21 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-article, aside, details, figcaption, figure, footer, header, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section,
+summary {
   display: block;
 }
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block;
 }
 audio:not([controls]) {
@@ -17,14 +28,16 @@ audio:not([controls]) {
   display: none;
 }
 a {
-  color: #231F40;
+  color: #231f40;
   text-decoration: none;
   outline: none;
 }
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   outline: none;
-  color: #525FE1;
+  color: #525fe1;
 }
 a:focus {
   outline: none;
@@ -35,17 +48,19 @@ address {
 abbr[title] {
   border-bottom: 1px dotted;
 }
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 p {
   font-size: 16px;
   line-height: 1.63;
   font-weight: 500;
-  color: #6F6B80;
+  color: #6f6b80;
   margin: 0 0 30px;
 }
-h5, .h5 {
+h5,
+.h5 {
   font-weight: 700;
 }
 .mt--40 {
@@ -65,7 +80,8 @@ h5, .h5 {
 }
 .course-details-card {
   border-radius: 8px;
-  border: 1px solid #EEEEEE;
+  background-color: whitesmoke;
+  border: 1px solid #eeeeee;
   padding: 30px;
 }
 .course-details-card .course-details-two-content p:last-child {
@@ -99,36 +115,41 @@ h5, .h5 {
     margin-right: -15px !important;
   }
 }
-.row--30 > [class*="col"], .row--30 > [class*="col-"] {
+.row--30 > [class*="col"],
+.row--30 > [class*="col-"] {
   padding-left: 30px;
   padding-right: 30px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
-  .row--30 > [class*="col"], .row--30 > [class*="col-"] {
+  .row--30 > [class*="col"],
+  .row--30 > [class*="col-"] {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .row--30 > [class*="col"], .row--30 > [class*="col-"] {
+  .row--30 > [class*="col"],
+  .row--30 > [class*="col-"] {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .row--30 > [class*="col"], .row--30 > [class*="col-"] {
+  .row--30 > [class*="col"],
+  .row--30 > [class*="col-"] {
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .row--30 > [class*="col"], .row--30 > [class*="col-"] {
+  .row--30 > [class*="col"],
+  .row--30 > [class*="col-"] {
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
 }
 .course-details-content .rating-box {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.07);
   border-radius: 5px;
   text-align: center;
@@ -139,7 +160,7 @@ h5, .h5 {
   font-weight: 800;
   font-size: 72px;
   line-height: 90px;
-  color: #231F40;
+  color: #231f40;
 }
 .course-details-content .rating-box span {
   font-weight: 500;
@@ -150,7 +171,7 @@ h5, .h5 {
   margin-top: 40px;
 }
 .course-details-content .rating-box {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.07);
   border-radius: 5px;
   text-align: center;
@@ -161,7 +182,7 @@ h5, .h5 {
   font-weight: 800;
   font-size: 72px;
   line-height: 90px;
-  color: #231F40;
+  color: #231f40;
 }
 .course-details-content .rating-box span {
   font-weight: 500;
@@ -180,7 +201,7 @@ h5, .h5 {
   max-width: 83%;
   margin-left: 38px;
   height: 12px;
-  background: #EEEEEE;
+  background: #eeeeee;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .review-wrapper .progress {
@@ -188,7 +209,7 @@ h5, .h5 {
   }
 }
 .review-wrapper .progress .progress-bar {
-  background-color: #FFA41B;
+  background-color: #ffa41b;
 }
 .review-wrapper span.rating-value {
   position: absolute;
@@ -231,21 +252,22 @@ h5, .h5 {
   line-height: 26px;
   display: block;
   margin-bottom: 10px;
-  color: #231F40;
+  color: #231f40;
 }
 @media only screen and (max-width: 575px) {
   .edu-comment .comment-content {
     margin-top: 20px;
   }
 }
-  
-@media (min-width: 768px){
-.col-md-8 {
+
+@media (min-width: 768px) {
+  .col-md-8 {
     flex: auto !important;
     width: 66.66666667%;
-}} 
+  }
+}
 .edu-comment + .edu-comment {
-  border-top: 1px solid #EEEEEE;
+  border-top: 1px solid #eeeeee;
   padding-top: 30px;
   margin-top: 30px;
 }
