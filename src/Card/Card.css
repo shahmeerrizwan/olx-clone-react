@@ -6,7 +6,7 @@
   flex-wrap: wrap-reverse;
 }
 .cardd {
-  margin: 10px;
+  margin-bottom: 12px;
   height: 600px !important;
   background-color: #fff;
   border-radius: 10px;
