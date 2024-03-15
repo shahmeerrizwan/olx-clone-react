@@ -104,7 +104,7 @@ function ScrollableCards() {
                     </a>
                 </div>
                 <div className="child">
-                    <a href="https://www.olx.com.pk/item/acer-tab-216-iid-1084410331" target='blank'><img src="https://images.olx.com.pk/thumbnails/435993208-800x600.webp" alt="Card 1" />
+                    <a href="https://www.olx.com.pk/item/acer-tab-216-iid-1084410331" target='blank'><img src="https://images.olx.com.pk/thumbnails/431272058-800x600.webp" alt="Card 1" />
 
                         <h4 className=''>Rs 6,500</h4>
                         <p>acer tab 2/16</p>
