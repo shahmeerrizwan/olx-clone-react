@@ -76,7 +76,7 @@ function ScrollableCards() {
             </button>
             <div ref={scrollImagesRef} className="scroll-images">
                 <div className="child">
-                    <a href="https://www.olx.com.pk/item/275-marla-modern-2-units-house-for-sale-iid-1084441774" target='blank'><img src="https://images.olx.com.pk/thumbnails/436182691-800x600.webp" alt="Card 1" />
+                    <a href="https://www.olx.com.pk/item/275-marla-modern-2-units-house-for-sale-iid-1084441774" target='blank'><img src="https://lid.zoocdn.com/645/430/25f37efbde63d386723a3fd7bd1479c3e9210af2.jpg" alt="Card 1" />
 
                         <h4 className=''>Rs 12,000,000</h4>
                         <p>2.75 Marla Modern 2 units House For sale <br />Bilal offers a great opportunity in the town of houses where every buyer can easily buy his own house ,Hot location 1 mnt away from main road,
@@ -87,7 +87,7 @@ function ScrollableCards() {
                     </a>
                 </div>
                 <div className="child">
-                    <a href="https://www.olx.com.pk/item/225-marla-classic-house-for-sale-iid-1084441072" target='blank'><img src="https://images.olx.com.pk/thumbnails/436178876-800x600.webp" alt="Card 1" />
+                    <a href="https://www.olx.com.pk/item/225-marla-classic-house-for-sale-iid-1084441072" target='blank'><img src="https://media.zameen.com/thumbnails/57682906-800x600.jpeg" alt="Card 1" />
 
                         <h4 className=''>Rs 12,000,000</h4>
                         <p>2.25 Marla Classic House For Sale <br />Bilal Estate offers one of the best option for clients.
