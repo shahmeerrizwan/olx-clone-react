@@ -110,7 +110,7 @@ function ScrollableCards() {
                             <h6>Clicked For More Update</h6></a>
                     </div>
                     <div className="child">
-                        <a href="https://www.olx.com.pk/item/2021-revi-new-tv-iid-1084388778" target='blank'><img src="https://images.olx.com.pk/thumbnails/435871237-800x600.webp" alt="Card 1" />
+                        <a href="https://www.olx.com.pk/item/2021-revi-new-tv-iid-1084388778" target='blank'><img src="https://i.brecorder.com/primary/2021/04/607563e3f271d.jpg" alt="Card 1" />
 
                             <h4 className=''>Rs 11,050,000</h4>
                             <p>2021 revo new tv 03123597704 num hai</p>
@@ -154,7 +154,7 @@ function ScrollableCards() {
                             <h6>Clicked For More Update</h6></a>
                     </div>
                     <div className="child">
-                        <a href="https://www.olx.com.pk/item/mazda-rx8-iid-1084397239" target='blank'><img src="https://images.olx.com.pk/thumbnails/435992366-800x600.webp" alt="Card 1" />
+                        <a href="https://www.olx.com.pk/item/mazda-rx8-iid-1084397239" target='blank'><img src="https://tse4.mm.bing.net/th?id=OIP.iWH4NrBDudiL_-Sc-6eaxwHaEK&pid=Api&P=0&h=220" alt="Card 1" />
 
                             <h4 className=''>Rs 2,650,000</h4>
                             <p>2500 cc engine capacity
