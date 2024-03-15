@@ -11,7 +11,7 @@ export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const handleMenuItemClick = () => {
-        setMenuOpen(false); // Close the hamburger menu
+        setMenuOpen(false); 
     };
     return (
         <>
@@ -86,17 +86,7 @@ export default function Navbar() {
                     <li><Link to="/contact" onClick={handleMenuItemClick}> Contact </Link></li>
                     <li><Link to="/reviews" onClick={handleMenuItemClick}> Reviews</Link></li>
                 </ul>
-            </header>
-
-
-
-
-
-
-
-
-
-
-        </>
+            </header> 
+    </>
     )
 }
